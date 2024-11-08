@@ -9,6 +9,6 @@ return (
   {element}
    </>
 );
-};
+}
 
 export default App

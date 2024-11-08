@@ -1,7 +1,6 @@
 import Layout from "./Layout";
-import NavBar from "./NavBar";
 import AddProject from "./pages/AddProject";
-import AddTodo from "./pages/AddTodo";
+import AddTodo from "./AddTodo";
 import EditTodo from "./pages/EditTodo";
 import FutureTodos from "./pages/FutureTodos";
 import NotFound from "./pages/NotFound";
@@ -24,10 +23,6 @@ const routes = [
                 element: <FutureTodos></FutureTodos>
             },
             {
-                path: "add",
-                element: <AddTodo></AddTodo>
-            },
-            {
                 path: "id",
                 element: <TodoDetails></TodoDetails>
             },
@@ -38,11 +33,6 @@ const routes = [
             {
                 path: "projects",
                 element: <Projects></Projects>,
-                children: [
-                    {
-                        path: "add", element: <AddProject></AddProject>
-                    },
-                ],
                 
             },
 

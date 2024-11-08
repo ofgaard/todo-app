@@ -3,10 +3,12 @@ import NavBar from "./NavBar";
 
 const Layout = () => {
   return (
-    <div>
+    <div className="flex gap-2">
+
         <NavBar></NavBar>
-        <div>
-            <Outlet></Outlet>
+
+        <div className="flex justify-center w-[10%] sm:w-[40%] md:w-screen">
+        <Outlet></Outlet>
         </div>
     </div>
   );
