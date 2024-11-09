@@ -1,7 +1,5 @@
 import Layout from "./Layout";
-import AddProject from "./pages/AddProject";
-import AddTodo from "./AddTodo";
-import EditTodo from "./pages/EditTodo";
+import AddTasks from "./pages/AddTasks";
 import FutureTodos from "./pages/FutureTodos";
 import NotFound from "./pages/NotFound";
 import Projects from "./pages/Projects";
@@ -27,14 +25,14 @@ const routes = [
                 element: <TodoDetails></TodoDetails>
             },
             {
-                path: "edit/:id",
-                element: <EditTodo></EditTodo>
-            },
-            {
                 path: "projects",
                 element: <Projects></Projects>,
                 
             },
+            {
+                path: "add",
+                element: <AddTasks></AddTasks>
+            }
 
         ],
     },

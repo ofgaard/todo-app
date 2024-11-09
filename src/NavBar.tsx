@@ -3,6 +3,7 @@ import { RiTodoLine } from "react-icons/ri";
 import { RiMenuLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
 
+
 const NavBar: React.FC = () => {
     const [sideNav, setSideNav] = useState<boolean>(false);
 
